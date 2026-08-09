@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './', // Wajib ada agar Electron bisa membaca aset CSS/JS secara lokal
+    base: '/bakumpul_demov3a/', // <-- Sudah disesuaikan untuk GitHub Pages
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -13,10 +13,8 @@ export default defineConfig(() => {
       },
     },
     server: {
-      host: true, // Akses dari IP jaringan lokal (LAN) agar bisa dibuka di perangkat/browser lain
+      host: true,
       port: 5173,
-      // Teruskan panggilan /api ke server Express (server.ts) sehingga sinkron
-      // jurnal & status login bekerja lintas perangkat walau dibuka via port 5173.
       proxy: {
         '/api': {
           target: 'http://localhost:3000',

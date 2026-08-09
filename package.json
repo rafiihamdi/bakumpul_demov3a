@@ -1,5 +1,6 @@
 {
   "name": "apk-bakumpul",
+  "homepage": "https://rafiihamdi.github.io/bakumpul_demov3a",
   "private": true,
   "version": "3.0.0",
   "type": "module",
@@ -12,8 +13,9 @@
     "vite:dev": "vite",
     "electron:start": "wait-on http://localhost:5173 && electron .",
     "electron:dev": "concurrently \"npm run vite:dev\" \"npm run electron:start\"",
-    "electron:build": "npm run build && electron-builder --win portable"
-  
+    "electron:build": "npm run build && electron-builder --win portable",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "build": {
     "appId": "com.apk.bakumpul",
@@ -50,6 +52,7 @@
     "electron": "^28.2.0",
     "electron-builder": "^24.9.0",
     "esbuild": "^0.25.0",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",

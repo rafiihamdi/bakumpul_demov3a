@@ -315,18 +315,18 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess, initia
             
             {/* BAKUMPUL LANDMARK GERBANG WATERMARK BACKGROUND */}
             <div className="absolute inset-0 z-0 opacity-20 pointer-events-none overflow-hidden select-none">
-              <img
-                src="/image/tanah bumbu.jpg"
-                alt="Watermark Gerbang Bakumpul"
+              <img 
+                src="/tanah-bumbu.jpg" 
+                alt="Watermark Gerbang Bakumpul" 
                 className="w-full h-full object-cover filter contrast-125 brightness-110 mix-blend-overlay"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-950 via-indigo-950/70 to-indigo-900/60"></div>
             </div>
 
-            {/* Logo Aplikasi - pojok kiri atas */}
-            <img
-              src="/image/logo1.png"
-              alt="Logo Bakumpul SD Online"
+           {/* Logo Aplikasi - pojok kiri atas */}
+            <img 
+              src="/logo1.png" 
+              alt="Logo Bakumpul SD Online" 
               className="absolute top-4 left-4 z-20 w-14 h-14 object-contain drop-shadow-xl"
             />
 
