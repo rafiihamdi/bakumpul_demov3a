@@ -313,22 +313,22 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess, initia
           {/* LEFT GRAPHIC BANNER SECTION (7 COLS ON LARGE) */}
           <div className="lg:col-span-7 bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-950 text-white p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden min-h-[480px]">
             
-            {/* BAKUMPUL LANDMARK GERBANG WATERMARK BACKGROUND */}
+           {/* BAKUMPUL LANDMARK GERBANG WATERMARK BACKGROUND */}
             <div className="absolute inset-0 z-0 opacity-20 pointer-events-none overflow-hidden select-none">
               <img 
-                  src={`${import.meta.env.BASE_URL}tanah-bumbu.jpg`} 
-                  alt="Watermark Gerbang Bakumpul" 
-                  className="w-full h-full object-cover filter contrast-125 brightness-110 mix-blend-overlay"
-                />
+                src={watermarkImg} 
+                alt="Watermark Gerbang Bakumpul" 
+                className="w-full h-full object-cover filter contrast-125 brightness-110 mix-blend-overlay"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-950 via-indigo-950/70 to-indigo-900/60"></div>
             </div>
 
            {/* Logo Aplikasi - pojok kiri atas */}
-            <img 
-              src={`${import.meta.env.BASE_URL}logo1.png`} 
-              alt="Logo Bakumpul SD Online" 
-              className="absolute top-4 left-4 z-20 w-14 h-14 object-contain drop-shadow-xl"
-            />
+              <img 
+                src={logoImg} 
+                alt="Logo Bakumpul SD Online" 
+                className="absolute top-4 left-4 z-20 w-14 h-14 object-contain drop-shadow-xl"
+              />
 
             {/* Decorative Watermark Landmark Motif Accent */}
             <div className="absolute -bottom-10 -right-10 w-96 h-96 rounded-full border-[16px] border-amber-400/10 pointer-events-none z-0"></div>
